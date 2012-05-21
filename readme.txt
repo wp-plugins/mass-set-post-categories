@@ -36,6 +36,17 @@ e.g.
 
 Yeah, I prolly can.  You can contact me and maybe I'll do it for free if I have time and think its a good idea.  Otherwise, you can hire me to do it.
 
+= Whatcha got in the trunk? =
+
+Oh... You don't wanna look in there.
+
+= Lobotomy? Isn't that for loonies? =
+
+Not at all. Friend of mine had one. Designer of the neutron bomb. You ever hear of the neutron bomb? Destroys people - leaves buildings standing. Fits in a suitcase. It's so small, no one knows it's there until - BLAMMO. Eyes melt, skin explodes, everybody dead. So immoral, working on the thing can drive you mad. That's what happened to this friend of mine. So he had a lobotomy. Now he's well again.
+
+= You ever feel as if your mind had started to erode? =
+
+[infinite recursion error]
 
 == Changelog ==
 
