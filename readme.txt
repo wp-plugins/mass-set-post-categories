@@ -18,7 +18,7 @@ This plugin lists all your posts and displays checkboxes for all your currently 
 *   I am going to try to implement a paging feature so that huge post lists wont crash anything.
 
 == Screenshots ==
-1 main screen
+1. main screen
 
 
 == Installation ==
