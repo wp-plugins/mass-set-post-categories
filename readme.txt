@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: JFrankParnell
 Donate link: http://example.com/
-Tags: comments, spam
+Tags: categories, mass edit
 Requires at least: 3.0
 Tested up to: 3.2
 Stable tag: trunk
