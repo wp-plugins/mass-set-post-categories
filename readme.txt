@@ -36,6 +36,10 @@ e.g.
 
 Yeah, I prolly can.  You can contact me and maybe I'll do it for free if I have time and think its a good idea.  Otherwise, you can hire me to do it.
 
+= It dont work =
+
+I fixed it, sorry bout that.
+
 = Whatcha got in the trunk? =
 
 Oh... You don't wanna look in there.
