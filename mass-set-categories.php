@@ -76,7 +76,7 @@ Your posts:<br />
 <?php
 	$fields=array('ID','post_title','category');
 	foreach ($posts as $p ){
-		$cats = getcategoriesforpost($p->ID , 'array');
+		$cats = msc_getcategoriesforpost($p->ID , 'array');
 		foreach ($fields as $f ){
 			if($f=='category')continue;
 			$r .= '<b>'.$f.'</b>'.':&nbsp;'.$p->$f."<br>";
@@ -149,6 +149,33 @@ function msc_hr($before=''){
 	<HR>
 	";
 }
+function msc_getcategoriesforpost($postid , $return = 'list'){
+		global $wpdb;
+			$q = "SELECT    `wp_terms`.`name`, `wp_terms`.`term_id` FROM     `wp_term_relationships`
+			INNER JOIN  `wp_term_taxonomy` ON (`wp_term_relationships`.`term_taxonomy_id` = `wp_term_taxonomy`.`term_taxonomy_id`)
+			INNER JOIN  `wp_terms`         ON (`wp_term_taxonomy`.`term_id` = `wp_terms`.`term_id`)
+			INNER JOIN  `wp_posts`         ON (`wp_term_relationships`.`object_id` = `wp_posts`.`ID`)
+		WHERE (`wp_posts`.`ID` = $postid);" ;
+		//echo $q;
+		$cats = $wpdb->get_results($q);
+		      //  d($cats);
+		  
+		if($cats){
+				foreach($cats as $c){
+					 $thecats[] = $c->name;
+					 $ret[] = array('name' => $c->name, 'term_id' =>$c->term_id);
+				}
+				if($return == 'array'){return $ret;}
+				else{return implode(', ',$thecats);}
+				
+		 }else{
+			 	if($return == 'array'){return $cats;}
+				else{return '-';}
+		}
+
+		 return $thecats ;
+
+}// function getcategoriesforpost
 
 
 ?>
