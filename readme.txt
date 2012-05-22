@@ -16,6 +16,7 @@ This plugin lists all your posts and displays checkboxes for all your currently 
 
 *   I've used this for 200 posts.  I dont really know what will happen if you try to change 2000 posts at a time.
 *   I am going to try to implement a paging feature so that huge post lists wont crash anything.
+*   The compatability i've listed simply means it's what i've used it on.  This will probly work on any >3 wp version.
 
 == Screenshots ==
 1. main screen
